@@ -9,28 +9,31 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <h1 className="text-2xl font-display font-bold text-foreground">
-              Lumière
+              Sparkupp Candles
             </h1>
             <span className="text-sm font-body text-muted-foreground">
-              Luxury Candles
+              Luxury & Custom
             </span>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#" className="font-body text-foreground hover:text-primary transition-colors">
+            <a href="/festive" className="font-body text-foreground hover:text-primary transition-colors">
               Festive Candles
             </a>
-            <a href="#" className="font-body text-foreground hover:text-primary transition-colors">
-              Mould & Jar
+            <a href="/mould" className="font-body text-foreground hover:text-primary transition-colors">
+              Mould Candles
             </a>
-            <a href="#" className="font-body text-foreground hover:text-primary transition-colors">
+            <a href="/jar" className="font-body text-foreground hover:text-primary transition-colors">
+              Jar Candles
+            </a>
+            <a href="/wax-sachets" className="font-body text-foreground hover:text-primary transition-colors">
               Wax Sachets
             </a>
-            <a href="#" className="font-body text-foreground hover:text-primary transition-colors">
+            <a href="/custom" className="font-body text-foreground hover:text-primary transition-colors">
               Custom Candles
             </a>
-            <a href="#" className="font-body text-foreground hover:text-primary transition-colors">
+            <a href="/about" className="font-body text-foreground hover:text-primary transition-colors">
               About
             </a>
           </nav>

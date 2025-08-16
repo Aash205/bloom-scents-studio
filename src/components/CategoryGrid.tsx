@@ -9,21 +9,32 @@ const categories = [
     title: "Festive Candles",
     description: "Celebrate special occasions with our curated collection",
     image: festiveImage,
-    items: "24 Products"
+    items: "24 Products",
+    link: "/festive"
   },
   {
     id: 2,
-    title: "Mould & Jar Collection",
-    description: "Elegant shapes and sizes for every space",
+    title: "Mould Candles",
+    description: "Beautiful shaped candles for every occasion",
     image: jarImage,
-    items: "18 Products"
+    items: "15 Products",
+    link: "/mould"
   },
   {
     id: 3,
+    title: "Jar Candles",
+    description: "Elegant container candles for long burning",
+    image: jarImage,
+    items: "18 Products",
+    link: "/jar"
+  },
+  {
+    id: 4,
     title: "Wax Sachets",
     description: "Aromatic sachets for wardrobes and drawers",
     image: sachetsImage,
-    items: "12 Products"
+    items: "12 Products",
+    link: "/wax-sachets"
   }
 ];
 
@@ -43,7 +54,7 @@ const CategoryGrid = () => {
         </div>
 
         {/* Category Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {categories.map((category) => (
             <div 
               key={category.id}
@@ -71,8 +82,8 @@ const CategoryGrid = () => {
                   <span className="text-sm font-body text-primary font-medium">
                     {category.items}
                   </span>
-                  <Button variant="outline" size="sm">
-                    Explore
+                  <Button variant="outline" size="sm" asChild>
+                    <a href={category.link}>Explore</a>
                   </Button>
                 </div>
               </div>
@@ -90,8 +101,8 @@ const CategoryGrid = () => {
               Design a unique candle that reflects your style. Choose your fragrance, 
               container, and add a personal message for that special touch.
             </p>
-            <Button variant="luxury" size="lg">
-              Start Customizing
+            <Button variant="luxury" size="lg" asChild>
+              <a href="/custom">Start Customizing</a>
             </Button>
           </div>
         </div>
