@@ -2,42 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Luxury Candle Brand Design System - Warm, Elegant, Boutique Feel */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Base colors - warm creams and neutrals */
+    --background: 35 15% 98%;
+    --foreground: 25 8% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Cards with subtle warmth */
+    --card: 35 20% 97%;
+    --card-foreground: 25 8% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    /* Popover styling */
+    --popover: 35 20% 97%;
+    --popover-foreground: 25 8% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary - warm gold/bronze */
+    --primary: 35 40% 45%;
+    --primary-foreground: 35 15% 98%;
+    --primary-gold: 45 85% 70%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - soft beige */
+    --secondary: 35 25% 92%;
+    --secondary-foreground: 25 15% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted tones */
+    --muted: 35 20% 94%;
+    --muted-foreground: 25 8% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent - warm sage */
+    --accent: 85 20% 85%;
+    --accent-foreground: 25 15% 25%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Destructive kept minimal */
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 35 15% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Borders and inputs */
+    --border: 35 15% 88%;
+    --input: 35 15% 88%;
+    --ring: 35 40% 45%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
+    /* Design system additions */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--background)), hsl(var(--secondary)));
+    --gradient-gold: linear-gradient(135deg, hsl(var(--primary-gold)), hsl(var(--primary)));
+    --shadow-luxury: 0 8px 32px -8px hsl(var(--primary) / 0.15);
+    --shadow-card: 0 4px 16px -4px hsl(var(--foreground) / 0.08);
+    
     --sidebar-background: 0 0% 98%;
 
     --sidebar-foreground: 240 5.3% 26.1%;
