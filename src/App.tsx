@@ -10,6 +10,7 @@ import FestiveCandles from "./pages/FestiveCandles";
 import MouldCandles from "./pages/MouldCandles";
 import JarCandles from "./pages/JarCandles";
 import WaxSachets from "./pages/WaxSachets";
+import CustomSachets from "./pages/CustomSachets";
 import About from "./pages/About";
 
 const queryClient = new QueryClient();
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/mould" element={<MouldCandles />} />
           <Route path="/jar" element={<JarCandles />} />
           <Route path="/wax-sachets" element={<WaxSachets />} />
+          <Route path="/custom-sachets" element={<CustomSachets />} />
           <Route path="/about" element={<About />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
