@@ -23,7 +23,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/custom" element={<CustomCandles />} />
+          {/* <Route path="/custom" element={<CustomCandles />} /> */}
           <Route path="/festive" element={<FestiveCandles />} />
           <Route path="/mould" element={<MouldCandles />} />
           <Route path="/jar" element={<JarCandles />} />

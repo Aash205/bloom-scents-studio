@@ -19,8 +19,6 @@ const WaxSachets = () => {
       category: "floral",
       fragrance: "Rose, Jasmine & Peony",
       duration: "2-3 months",
-      inStock: true,
-      isNew: true,
       pack: "Set of 6"
     },
     {
@@ -32,8 +30,6 @@ const WaxSachets = () => {
       category: "sea",
       fragrance: "Sea Salt & Aqua",
       duration: "3-4 months",
-      inStock: true,
-      isNew: false,
       pack: "Set of 8"
     },
     {
@@ -45,8 +41,6 @@ const WaxSachets = () => {
       category: "floral",
       fragrance: "Pure Lavender",
       duration: "2-3 months",
-      inStock: true,
-      isNew: false,
       pack: "Set of 4"
     },
     {
@@ -58,8 +52,6 @@ const WaxSachets = () => {
       category: "forest",
       fragrance: "Pine, Cedar & Eucalyptus",
       duration: "4-5 months",
-      inStock: false,
-      isNew: true,
       pack: "Set of 6"
     },
     {
@@ -71,8 +63,6 @@ const WaxSachets = () => {
       category: "sea",
       fragrance: "Coconut & Pineapple",
       duration: "3 months",
-      inStock: true,
-      isNew: false,
       pack: "Set of 5"
     },
     {
@@ -84,8 +74,6 @@ const WaxSachets = () => {
       category: "forest",
       fragrance: "Sandalwood & Moss",
       duration: "4-6 months",
-      inStock: true,
-      isNew: true,
       pack: "Set of 10"
     },
     {
@@ -97,8 +85,6 @@ const WaxSachets = () => {
       category: "floral",
       fragrance: "Cherry Blossom & Vanilla",
       duration: "3 months",
-      inStock: true,
-      isNew: false,
       pack: "Set of 6"
     },
     {
@@ -110,8 +96,6 @@ const WaxSachets = () => {
       category: "sea",
       fragrance: "Sea Breeze & Lemon",
       duration: "3-4 months",
-      inStock: true,
-      isNew: true,
       pack: "Set of 12"
     }
   ];
@@ -123,21 +107,21 @@ const WaxSachets = () => {
     { id: "forest", name: "Forest Fresh" }
   ];
 
-  const filteredProducts = selectedFilter === "all" 
-    ? products 
+  const filteredProducts = selectedFilter === "all"
+    ? products
     : products.filter(product => product.category === selectedFilter);
 
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      
+
       <main className="container mx-auto px-4 py-8">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-display font-bold text-foreground mb-4">
             Wax Sachets Collection
           </h1>
           <p className="text-lg font-body text-muted-foreground max-w-2xl mx-auto">
-            Transform your wardrobes, drawers, and small spaces with our aromatic wax sachets. 
+            Transform your wardrobes, drawers, and small spaces with our aromatic wax sachets.
             Long-lasting fragrance without the flame, perfect for enclosed spaces.
           </p>
         </div>
@@ -163,18 +147,12 @@ const WaxSachets = () => {
           {filteredProducts.map((product) => (
             <Card key={product.id} className="group hover:shadow-luxury transition-all duration-300">
               <div className="relative">
-                <img 
-                  src={product.image} 
+                <img
+                  src={product.image}
                   alt={product.name}
                   className="w-full h-48 object-cover rounded-t-lg"
                 />
                 <div className="absolute top-3 left-3 flex gap-2">
-                  {product.isNew && (
-                    <Badge variant="default">New</Badge>
-                  )}
-                  {!product.inStock && (
-                    <Badge variant="destructive">Out of Stock</Badge>
-                  )}
                 </div>
                 <div className="absolute top-3 right-3 flex gap-2">
                   <Button size="icon" variant="secondary" className="h-8 w-8 opacity-0 group-hover:opacity-100 transition-opacity">
@@ -182,13 +160,13 @@ const WaxSachets = () => {
                   </Button>
                 </div>
               </div>
-              
+
               <CardContent className="p-4">
                 <h3 className="font-display font-semibold text-lg mb-1">{product.name}</h3>
                 <p className="text-sm text-primary mb-2">{product.pack}</p>
                 <p className="text-sm text-muted-foreground mb-2">{product.fragrance}</p>
                 <p className="text-xs text-muted-foreground mb-3">Lasts: {product.duration}</p>
-                
+
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
                     <span className="text-lg font-bold text-primary">₹{product.price}</span>
@@ -198,13 +176,13 @@ const WaxSachets = () => {
                       </span>
                     )}
                   </div>
-                  <Button 
-                    size="sm" 
-                    disabled={!product.inStock}
+                  <Button
+                    size="sm"
+
                     className="gap-2"
                   >
                     <ShoppingCart className="h-4 w-4" />
-                    {product.inStock ? "Add to Cart" : "Notify Me"}
+
                   </Button>
                 </div>
               </CardContent>
@@ -227,7 +205,7 @@ const WaxSachets = () => {
               Customizable Wax Sachets
             </h3>
             <p className="text-foreground/80 mb-6 max-w-2xl mx-auto">
-              Create your perfect scent combination! Choose from our premium fragrances, 
+              Create your perfect scent combination! Choose from our premium fragrances,
               select your theme, and add a personal message for a truly unique experience.
             </p>
             <Button variant="luxury" size="lg" asChild>
@@ -246,7 +224,7 @@ const WaxSachets = () => {
               </p>
             </CardContent>
           </Card>
-          
+
           <Card>
             <CardContent className="p-4 text-center">
               <h4 className="font-semibold mb-2">Drawers</h4>
@@ -255,7 +233,7 @@ const WaxSachets = () => {
               </p>
             </CardContent>
           </Card>
-          
+
           <Card>
             <CardContent className="p-4 text-center">
               <h4 className="font-semibold mb-2">Cars</h4>
@@ -264,7 +242,7 @@ const WaxSachets = () => {
               </p>
             </CardContent>
           </Card>
-          
+
           <Card>
             <CardContent className="p-4 text-center">
               <h4 className="font-semibold mb-2">Gym Bags</h4>

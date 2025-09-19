@@ -18,9 +18,6 @@ const JarCandles = () => {
       image: "/placeholder.svg",
       category: "mason",
       fragrance: "Vanilla & Cinnamon",
-      burnTime: "40-45 hours",
-      inStock: true,
-      isNew: false,
       size: "Large (400g)"
     },
     {
@@ -31,9 +28,6 @@ const JarCandles = () => {
       image: "/placeholder.svg",
       category: "amber",
       fragrance: "Sandalwood & Bergamot",
-      burnTime: "50-55 hours",
-      inStock: true,
-      isNew: true,
       size: "Extra Large (500g)"
     },
     {
@@ -44,9 +38,6 @@ const JarCandles = () => {
       image: "/placeholder.svg",
       category: "ceramic",
       fragrance: "Lavender & Eucalyptus",
-      burnTime: "35-40 hours",
-      inStock: true,
-      isNew: false,
       size: "Medium (300g)"
     },
     {
@@ -57,9 +48,6 @@ const JarCandles = () => {
       image: "/placeholder.svg",
       category: "vintage",
       fragrance: "Rose & Patchouli",
-      burnTime: "60-65 hours",
-      inStock: false,
-      isNew: true,
       size: "Extra Large (600g)"
     },
     {
@@ -70,9 +58,6 @@ const JarCandles = () => {
       image: "/placeholder.svg",
       category: "clear",
       fragrance: "Fresh Linen",
-      burnTime: "30-35 hours",
-      inStock: true,
-      isNew: false,
       size: "Small (250g)"
     },
     {
@@ -83,9 +68,6 @@ const JarCandles = () => {
       image: "/placeholder.svg",
       category: "rustic",
       fragrance: "Cedar & Pine",
-      burnTime: "45-50 hours",
-      inStock: true,
-      isNew: true,
       size: "Large (450g)"
     }
   ];
@@ -100,21 +82,21 @@ const JarCandles = () => {
     { id: "rustic", name: "Rustic" }
   ];
 
-  const filteredProducts = selectedFilter === "all" 
-    ? products 
+  const filteredProducts = selectedFilter === "all"
+    ? products
     : products.filter(product => product.category === selectedFilter);
 
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      
+
       <main className="container mx-auto px-4 py-8">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-display font-bold text-foreground mb-4">
             Jar Candles Collection
           </h1>
           <p className="text-lg font-body text-muted-foreground max-w-2xl mx-auto">
-            Elegant container candles designed for long-lasting fragrance and reusable beauty. 
+            Elegant container candles designed for long-lasting fragrance and reusable beauty.
             Each jar becomes a decorative piece even after the candle burns down.
           </p>
         </div>
@@ -140,18 +122,12 @@ const JarCandles = () => {
           {filteredProducts.map((product) => (
             <Card key={product.id} className="group hover:shadow-luxury transition-all duration-300">
               <div className="relative">
-                <img 
-                  src={product.image} 
+                <img
+                  src={product.image}
                   alt={product.name}
                   className="w-full h-48 object-cover rounded-t-lg"
                 />
                 <div className="absolute top-3 left-3 flex gap-2">
-                  {product.isNew && (
-                    <Badge variant="default">New</Badge>
-                  )}
-                  {!product.inStock && (
-                    <Badge variant="destructive">Out of Stock</Badge>
-                  )}
                 </div>
                 <div className="absolute top-3 right-3 flex gap-2">
                   <Button size="icon" variant="secondary" className="h-8 w-8 opacity-0 group-hover:opacity-100 transition-opacity">
@@ -159,13 +135,12 @@ const JarCandles = () => {
                   </Button>
                 </div>
               </div>
-              
+
               <CardContent className="p-4">
                 <h3 className="font-display font-semibold text-lg mb-1">{product.name}</h3>
                 <p className="text-sm text-primary mb-2">{product.size}</p>
                 <p className="text-sm text-muted-foreground mb-2">{product.fragrance}</p>
-                <p className="text-xs text-muted-foreground mb-3">Burn time: {product.burnTime}</p>
-                
+
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
                     <span className="text-lg font-bold text-primary">₹{product.price}</span>
@@ -175,13 +150,12 @@ const JarCandles = () => {
                       </span>
                     )}
                   </div>
-                  <Button 
-                    size="sm" 
-                    disabled={!product.inStock}
+                  <Button
+                    size="sm"
                     className="gap-2"
                   >
                     <ShoppingCart className="h-4 w-4" />
-                    {product.inStock ? "Add to Cart" : "Notify Me"}
+                    "Add to Cart"
                   </Button>
                 </div>
               </CardContent>
@@ -209,7 +183,7 @@ const JarCandles = () => {
               </p>
             </CardContent>
           </Card>
-          
+
           <Card>
             <CardContent className="p-6 text-center">
               <h3 className="font-display font-semibold text-lg mb-3">
@@ -220,7 +194,7 @@ const JarCandles = () => {
               </p>
             </CardContent>
           </Card>
-          
+
           <Card>
             <CardContent className="p-6 text-center">
               <h3 className="font-display font-semibold text-lg mb-3">

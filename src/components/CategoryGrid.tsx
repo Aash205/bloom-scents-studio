@@ -48,7 +48,7 @@ const CategoryGrid = () => {
             Shop by Category
           </h2>
           <p className="text-lg font-body text-muted-foreground max-w-2xl mx-auto">
-            Discover our carefully curated collections, each designed to bring 
+            Discover our carefully curated collections, each designed to bring
             warmth and elegance to your living spaces.
           </p>
         </div>
@@ -56,18 +56,18 @@ const CategoryGrid = () => {
         {/* Category Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {categories.map((category) => (
-            <div 
+            <div
               key={category.id}
               className="group relative bg-card rounded-lg overflow-hidden shadow-card hover:shadow-luxury transition-all duration-300 transform hover:-translate-y-2"
             >
               <div className="aspect-[4/3] overflow-hidden">
-                <img 
-                  src={category.image} 
+                <img
+                  src={category.image}
                   alt={category.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              
+
               <div className="p-6">
                 <div className="mb-4">
                   <h3 className="text-xl font-display font-semibold text-foreground mb-2">
@@ -77,7 +77,7 @@ const CategoryGrid = () => {
                     {category.description}
                   </p>
                 </div>
-                
+
                 <div className="flex items-center justify-between">
                   <span className="text-sm font-body text-primary font-medium">
                     {category.items}
@@ -92,7 +92,7 @@ const CategoryGrid = () => {
         </div>
 
         {/* Custom Candle CTA */}
-        <div className="mt-16 text-center">
+        {/* <div className="mt-16 text-center">
           <div className="bg-gradient-gold rounded-lg p-8 md:p-12">
             <h3 className="text-3xl font-display font-bold text-foreground mb-4">
               Create Your Perfect Candle
@@ -105,7 +105,7 @@ const CategoryGrid = () => {
               <a href="/custom">Start Customizing</a>
             </Button>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

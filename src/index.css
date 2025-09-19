@@ -1,10 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* Luxury Candle Brand Design System - Warm, Elegant, Boutique Feel */
-
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
 @layer base {
   :root {
@@ -53,7 +53,7 @@
     --gradient-gold: linear-gradient(135deg, hsl(var(--primary-gold)), hsl(var(--primary)));
     --shadow-luxury: 0 8px 32px -8px hsl(var(--primary) / 0.15);
     --shadow-card: 0 4px 16px -4px hsl(var(--foreground) / 0.08);
-    
+
     --sidebar-background: 0 0% 98%;
 
     --sidebar-foreground: 240 5.3% 26.1%;

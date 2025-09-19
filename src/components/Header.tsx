@@ -9,11 +9,13 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <h1 className="text-2xl font-display font-bold text-foreground">
-              Sparkupp Candles
+              <a href="/" >
+                Sparkupp Candles
+              </a>
             </h1>
-            <span className="text-sm font-body text-muted-foreground">
+            {/* <span className="text-sm font-body text-muted-foreground">
               Luxury & Custom
-            </span>
+            </span> */}
           </div>
 
           {/* Desktop Navigation */}
@@ -30,8 +32,8 @@ const Header = () => {
             <a href="/wax-sachets" className="font-body text-foreground hover:text-primary transition-colors">
               Wax Sachets
             </a>
-            <a href="/custom" className="font-body text-foreground hover:text-primary transition-colors">
-              Custom Candles
+            <a href="/custom-sachets" className="font-body text-foreground hover:text-primary transition-colors">
+              Custom Sachets
             </a>
             <a href="/about" className="font-body text-foreground hover:text-primary transition-colors">
               About
@@ -40,7 +42,7 @@ const Header = () => {
 
           {/* Action Buttons */}
           <div className="flex items-center space-x-2">
-            <Button variant="ghost" size="icon" className="hidden md:flex">
+            {/* <Button variant="ghost" size="icon" className="hidden md:flex">
               <Search className="h-5 w-5" />
             </Button>
             <Button variant="ghost" size="icon" className="hidden md:flex">
@@ -48,7 +50,7 @@ const Header = () => {
             </Button>
             <Button variant="ghost" size="icon" className="relative">
               <Heart className="h-5 w-5" />
-            </Button>
+            </Button> */}
             <Button variant="ghost" size="icon" className="relative">
               <ShoppingCart className="h-5 w-5" />
               <span className="absolute -top-1 -right-1 h-4 w-4 bg-primary text-primary-foreground text-xs rounded-full flex items-center justify-center">
