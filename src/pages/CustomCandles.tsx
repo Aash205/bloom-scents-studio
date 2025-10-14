@@ -45,14 +45,14 @@ const CustomCandles = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      
+
       <main className="container mx-auto px-4 py-8">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-display font-bold text-foreground mb-4">
             Create Your Perfect Candle
           </h1>
           <p className="text-lg font-body text-muted-foreground max-w-2xl mx-auto">
-            Design a unique candle that reflects your style. Choose your container, 
+            Design a unique candle that reflects your style. Choose your container,
             fragrance, theme, and add a personal touch with a custom message.
           </p>
         </div>
@@ -71,16 +71,15 @@ const CustomCandles = () => {
                 <h3 className="text-xl font-display font-semibold">Choose Your Container</h3>
                 <div className="grid md:grid-cols-2 gap-4">
                   {containers.map((container) => (
-                    <Card 
+                    <Card
                       key={container.id}
-                      className={`cursor-pointer transition-all hover:shadow-lg ${
-                        selectedContainer === container.id ? 'ring-2 ring-primary' : ''
-                      }`}
+                      className={`cursor-pointer transition-all hover:shadow-lg ${selectedContainer === container.id ? 'ring-2 ring-primary' : ''
+                        }`}
                       onClick={() => setSelectedContainer(container.id)}
                     >
                       <CardContent className="p-4">
-                        <img 
-                          src={container.image} 
+                        <img
+                          src={container.image}
                           alt={container.name}
                           className="w-full h-32 object-cover rounded-md mb-3"
                         />
@@ -96,11 +95,10 @@ const CustomCandles = () => {
                 <h3 className="text-xl font-display font-semibold">Select Fragrance</h3>
                 <div className="grid md:grid-cols-2 gap-4">
                   {fragrances.map((fragrance) => (
-                    <Card 
+                    <Card
                       key={fragrance.id}
-                      className={`cursor-pointer transition-all hover:shadow-lg ${
-                        selectedFragrance === fragrance.id ? 'ring-2 ring-primary' : ''
-                      }`}
+                      className={`cursor-pointer transition-all hover:shadow-lg ${selectedFragrance === fragrance.id ? 'ring-2 ring-primary' : ''
+                        }`}
                       onClick={() => setSelectedFragrance(fragrance.id)}
                     >
                       <CardContent className="p-4">
@@ -116,11 +114,10 @@ const CustomCandles = () => {
                 <h3 className="text-xl font-display font-semibold">Pick a Theme</h3>
                 <div className="grid md:grid-cols-2 gap-4">
                   {themes.map((theme) => (
-                    <Card 
+                    <Card
                       key={theme.id}
-                      className={`cursor-pointer transition-all hover:shadow-lg ${
-                        selectedTheme === theme.id ? 'ring-2 ring-primary' : ''
-                      }`}
+                      className={`cursor-pointer transition-all hover:shadow-lg ${selectedTheme === theme.id ? 'ring-2 ring-primary' : ''
+                        }`}
                       onClick={() => setSelectedTheme(theme.id)}
                     >
                       <CardContent className="p-4">
@@ -162,7 +159,7 @@ const CustomCandles = () => {
                 <div className="aspect-square bg-muted rounded-lg flex items-center justify-center">
                   <p className="text-muted-foreground">Live Preview</p>
                 </div>
-                
+
                 <div className="space-y-2">
                   {selectedContainer && (
                     <div className="flex justify-between">
@@ -203,8 +200,8 @@ const CustomCandles = () => {
                   </div>
                 </div>
 
-                <Button 
-                  className="w-full" 
+                <Button
+                  className="w-full"
                   disabled={!selectedContainer || !selectedFragrance || !selectedTheme}
                 >
                   Add to Cart
@@ -216,7 +213,7 @@ const CustomCandles = () => {
               <CardContent className="p-4">
                 <h4 className="font-semibold mb-2">Delivery Info</h4>
                 <p className="text-sm text-muted-foreground">
-                  Custom candles take 3-5 business days to craft. 
+                  Custom candles take 3-5 business days to craft.
                   Free delivery on orders above ₹500.
                 </p>
               </CardContent>

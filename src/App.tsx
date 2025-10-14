@@ -28,7 +28,7 @@ const App = () => (
           <Route path="/mould" element={<MouldCandles />} />
           <Route path="/jar" element={<JarCandles />} />
           <Route path="/wax-sachets" element={<WaxSachets />} />
-          <Route path="/custom-sachets" element={<CustomSachets />} />
+          {/* <Route path="/custom-sachets" element={<CustomSachets />} /> */}
           <Route path="/about" element={<About />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

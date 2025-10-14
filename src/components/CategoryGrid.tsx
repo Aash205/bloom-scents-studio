@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
-import festiveImage from "@/assets/festive-candles.jpg";
-import jarImage from "@/assets/jar-collection.jpg";
-import sachetsImage from "@/assets/wax-sachets.jpg";
+// import festiveImage from "@/assets/festive-candles.jpg";
+import festiveImage from "@/assets/diwali/11.png";
+import jarImage from "@/assets/jar/1.png";
+import mouldImage from "@/assets/christmas/10.png";
+import sachetsImage from "@/assets/diwali/13.png";
 
 const categories = [
   {
@@ -16,7 +18,7 @@ const categories = [
     id: 2,
     title: "Mould Candles",
     description: "Beautiful shaped candles for every occasion",
-    image: jarImage,
+    image: mouldImage,
     items: "15 Products",
     link: "/mould"
   },

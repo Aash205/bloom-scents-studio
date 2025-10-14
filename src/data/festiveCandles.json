@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Diwali Diyas Set",
+        "price": 299,
+        "originalPrice": 399,
+        "image": "diwali/1.png",
+        "category": "diwali",
+        "fragrance": "Jasmine & Marigold"
+    },
+    {
+        "id": 2,
+        "name": "Happy Diwali Secret Message",
+        "price": 549,
+        "originalPrice": null,
+        "image": "diwali/4.png",
+        "category": "diwali",
+        "fragrance": "Pine & Cinnamon"
+    },
+    {
+        "id": 3,
+        "name": "Diwali Laddu Candle",
+        "price": 199,
+        "originalPrice": 249,
+        "image": "diwali/11.png",
+        "category": "diwali",
+        "fragrance": "Lotus & Sandalwood"
+    },
+    {
+        "id": 4,
+        "name": "Diwali Kaju Barfi Candle",
+        "price": 349,
+        "originalPrice": null,
+        "image": "diwali/12.png",
+        "category": "diwali",
+        "fragrance": "Rose & Gulal"
+    }
+]
