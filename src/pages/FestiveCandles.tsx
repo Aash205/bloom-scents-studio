@@ -22,19 +22,28 @@ type Product = {
   price: number;
   originalPrice: number | null;
   image: string;
-  category: string;
+  categories: string[]; // ✅ supports multiple
+  category?: string; // backward compatible
   fragrance: string;
 };
 
 const FestiveCandles = () => {
   const [selectedFilter, setSelectedFilter] = useState("all");
 
-  // Map image names from JSON → actual resolved URLs once
+  // ✅ Map image names & normalize categories
   const products: Product[] = useMemo(() => {
-    return (productsData as Product[]).map((p) => {
-      const key = `/src/assets/${p.image.replace(/^\/+/, "")}`; // e.g. "diwali/1.png"
+    return (productsData as any[]).map((p) => {
+      const key = `/src/assets/${String(p.image).replace(/^\/+/, "")}`;
       const src = images[key] ?? PLACEHOLDER;
-      return { ...p, image: src };
+
+      // normalize categories so JSON can use either "category" or "categories"
+      const categories: string[] = Array.isArray(p.categories)
+        ? p.categories
+        : p.category
+          ? [p.category]
+          : [];
+
+      return { ...p, image: src, categories };
     });
   }, []);
 
@@ -48,7 +57,7 @@ const FestiveCandles = () => {
   const filteredProducts =
     selectedFilter === "all"
       ? products
-      : products.filter((p) => p.category === selectedFilter);
+      : products.filter((p) => p.categories.includes(selectedFilter));
 
   return (
     <div className="min-h-screen bg-background">
@@ -124,7 +133,9 @@ const FestiveCandles = () => {
 
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
-                    <span className="text-lg font-bold text-primary">₹{product.price}</span>
+                    <span className="text-lg font-bold text-primary">
+                      ₹{product.price}
+                    </span>
                     {product.originalPrice && (
                       <span className="text-sm text-muted-foreground line-through">
                         ₹{product.originalPrice}

@@ -1,0 +1,90 @@
+[
+    {
+        "id": 1,
+        "name": "Rose Garden Mix",
+        "price": 199,
+        "originalPrice": null,
+        "image": "/sachets/rose_garden_mix.png",
+        "category": "floral",
+        "fragrance": "Rose, Jasmine & Peony",
+        "duration": "2-3 months",
+        "pack": "Set of 6"
+    },
+    {
+        "id": 2,
+        "name": "Ocean Breeze Collection",
+        "price": 249,
+        "originalPrice": 299,
+        "image": "/sachets/ocean_breeze_collection.png",
+        "category": "sea",
+        "fragrance": "Sea Salt & Aqua",
+        "duration": "3-4 months",
+        "pack": "Set of 8"
+    },
+    {
+        "id": 3,
+        "name": "Lavender Dreams",
+        "price": 179,
+        "originalPrice": null,
+        "image": "/sachets/lavender_dreams.png",
+        "category": "floral",
+        "fragrance": "Pure Lavender",
+        "duration": "2-3 months",
+        "pack": "Set of 4"
+    },
+    {
+        "id": 4,
+        "name": "Forest Fresh Pack",
+        "price": 229,
+        "originalPrice": null,
+        "image": "/sachets/forest_fresh_pack.png",
+        "category": "forest",
+        "fragrance": "Pine, Cedar & Eucalyptus",
+        "duration": "4-5 months",
+        "pack": "Set of 6"
+    },
+    {
+        "id": 5,
+        "name": "Tropical Paradise",
+        "price": 199,
+        "originalPrice": 249,
+        "image": "/sachets/tropical_paradise.png",
+        "category": "sea",
+        "fragrance": "Coconut & Pineapple",
+        "duration": "3 months",
+        "pack": "Set of 5"
+    },
+    {
+        "id": 6,
+        "name": "Mystic Forest",
+        "price": 269,
+        "originalPrice": null,
+        "image": "/sachets/mystic_forest.png",
+        "category": "forest",
+        "fragrance": "Sandalwood & Moss",
+        "duration": "4-6 months",
+        "pack": "Set of 10"
+    },
+    {
+        "id": 7,
+        "name": "Cherry Blossom",
+        "price": 219,
+        "originalPrice": null,
+        "image": "/sachets/cherry_blossom.png",
+        "category": "floral",
+        "fragrance": "Cherry Blossom & Vanilla",
+        "duration": "3 months",
+        "pack": "Set of 6"
+    },
+    {
+        "id": 8,
+        "name": "Mediterranean Coast",
+        "price": 289,
+        "originalPrice": 329,
+        "image": "/sachets/mediterranean_coast.png",
+        "category": "sea",
+        "fragrance": "Sea Breeze & Lemon",
+        "duration": "3-4 months",
+        "pack": "Set of 12"
+    }
+]

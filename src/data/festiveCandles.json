@@ -1,12 +1,14 @@
 [
     {
         "id": 1,
-        "name": "Diwali Diyas Set",
+        "name": "Diwali Urli Set",
         "price": 299,
         "originalPrice": 399,
         "image": "diwali/1.png",
-        "category": "diwali",
-        "fragrance": "Jasmine & Marigold"
+        "categories": [
+            "diwali"
+        ],
+        "fragrance": "Lavender"
     },
     {
         "id": 2,
@@ -14,25 +16,152 @@
         "price": 549,
         "originalPrice": null,
         "image": "diwali/4.png",
-        "category": "diwali",
+        "categories": [
+            "diwali"
+        ],
         "fragrance": "Pine & Cinnamon"
     },
     {
         "id": 3,
-        "name": "Diwali Laddu Candle",
+        "name": "Laddu Candle",
         "price": 199,
         "originalPrice": 249,
         "image": "diwali/11.png",
-        "category": "diwali",
+        "categories": [
+            "diwali"
+        ],
         "fragrance": "Lotus & Sandalwood"
     },
     {
         "id": 4,
+        "name": "Kaju Barfi Candle",
+        "price": 349,
+        "originalPrice": null,
+        "image": "diwali/12.png",
+        "categories": [
+            "diwali"
+        ],
+        "fragrance": "Rose & Gulal"
+    },
+    {
+        "id": 5,
         "name": "Diwali Kaju Barfi Candle",
         "price": 349,
         "originalPrice": null,
         "image": "diwali/12.png",
-        "category": "diwali",
+        "categories": [
+            "diwali"
+        ],
         "fragrance": "Rose & Gulal"
+    },
+    {
+        "id": 6,
+        "name": "Angel Candle",
+        "price": 349,
+        "originalPrice": null,
+        "image": "christmas/angel.png",
+        "categories": [
+            "christmas"
+        ],
+        "fragrance": "Rose & Lavender"
+    },
+    {
+        "id": 7,
+        "name": "Santa Candle",
+        "price": 349,
+        "originalPrice": null,
+        "image": "christmas/santa.png",
+        "categories": [
+            "christmas"
+        ],
+        "fragrance": "Rose & Lavender"
+    },
+    {
+        "id": 8,
+        "name": "Christmas Jars Set",
+        "price": 349,
+        "originalPrice": null,
+        "image": "christmas/christmas_jars.png",
+        "categories": [
+            "christmas"
+        ],
+        "fragrance": "Rose & Lavender"
+    },
+    {
+        "id": 9,
+        "name": "Christmas Tin Jar Set",
+        "price": 349,
+        "originalPrice": null,
+        "image": "christmas/tin_jar_christmas.png",
+        "categories": [
+            "christmas"
+        ],
+        "fragrance": "Rose & Lavender"
+    },
+    {
+        "id": 10,
+        "name": "Circle TeaLight Set",
+        "price": 349,
+        "originalPrice": null,
+        "image": "christmas/circle_tealights.png",
+        "categories": [
+            "christmas"
+        ],
+        "fragrance": "Rose & Lavender"
+    },
+    {
+        "id": 11,
+        "name": "Square TeaLight Set",
+        "price": 349,
+        "originalPrice": null,
+        "image": "christmas/square_tealights.png",
+        "categories": [
+            "christmas"
+        ],
+        "fragrance": "Rose & Lavender"
+    },
+    {
+        "id": 12,
+        "name": "Snowflake Christmas Jar",
+        "price": 349,
+        "originalPrice": null,
+        "image": "christmas/red_christmas.png",
+        "categories": [
+            "christmas"
+        ],
+        "fragrance": "Rose & Lavender"
+    },
+    {
+        "id": 13,
+        "name": "Deer Christmas Jar",
+        "price": 349,
+        "originalPrice": null,
+        "image": "christmas/deer_christmas.png",
+        "categories": [
+            "christmas"
+        ],
+        "fragrance": "Rose & Lavender"
+    },
+    {
+        "id": 14,
+        "name": "Tree Christmas Jar",
+        "price": 349,
+        "originalPrice": null,
+        "image": "christmas/green_christmas_jar.png",
+        "categories": [
+            "christmas"
+        ],
+        "fragrance": "Rose & Lavender"
+    },
+    {
+        "id": 15,
+        "name": "Christmas Wax Sachets",
+        "price": 349,
+        "originalPrice": null,
+        "image": "christmas/christmas_wax_sachets.png",
+        "categories": [
+            "christmas"
+        ],
+        "fragrance": "Rose & Lavender"
     }
 ]

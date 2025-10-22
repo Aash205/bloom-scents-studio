@@ -16,5 +16,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: "/bloom-scents-studio/",
+  // base: "/bloom-scents-studio/",
 }));

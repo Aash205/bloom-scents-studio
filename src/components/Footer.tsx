@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-display font-bold">Lumière</h3>
+            <h3 className="text-2xl font-display font-bold">Sparkupp</h3>
             <p className="font-body text-background/80">
               Crafting moments of serenity through luxury candles and aromatic experiences.
             </p>
@@ -69,15 +69,15 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3 font-body text-background/80">
                 <Mail className="h-4 w-4" />
-                <span>hello@lumiere.com</span>
+                <span>sparkuppcandles@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3 font-body text-background/80">
                 <Phone className="h-4 w-4" />
-                <span>+1 (555) 123-4567</span>
+                <span>+1 (91) 9819280642</span>
               </div>
               <div className="flex items-center space-x-3 font-body text-background/80">
                 <MapPin className="h-4 w-4" />
-                <span>123 Craft Street, NY</span>
+                <span>Kandivali West, Mumbai</span>
               </div>
             </div>
           </div>
@@ -86,7 +86,7 @@ const Footer = () => {
         {/* Bottom */}
         <div className="border-t border-background/20 mt-12 pt-8 text-center">
           <p className="font-body text-background/60">
-            © 2024 Lumière. All rights reserved. Made with ♥ for candle lovers.
+            © 2024 Sparkupp. All rights reserved. Made with ♥ for candle lovers.
           </p>
         </div>
       </div>

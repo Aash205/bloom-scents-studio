@@ -1,76 +1,51 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { Heart, ShoppingCart, Filter } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+import productsData from "@/data/mouldCandles.json";
+
+// ✅ Same glob used in Festive/Jar pages
+const images = import.meta.glob("@/assets/**/*", {
+  eager: true,
+  import: "default",
+  query: "?url",
+}) as Record<string, string>;
+
+const PLACEHOLDER = "/placeholder.svg";
+
+type Product = {
+  id: number;
+  name: string;
+  price: number;
+  originalPrice: number | null;
+  image: string;
+  categories: string[]; // normalized
+  category?: string;    // backward compatible
+  fragrance: string;
+  shape: string;
+};
+
 const MouldCandles = () => {
   const [selectedFilter, setSelectedFilter] = useState("all");
 
-  const products = [
-    {
-      id: 1,
-      name: "Rose Bloom Mould",
-      price: 399,
-      originalPrice: null,
-      image: "/placeholder.svg",
-      category: "flower",
-      fragrance: "Fresh Rose",
-      shape: "Rose"
-    },
-    {
-      id: 2,
-      name: "Buddha Meditation",
-      price: 549,
-      originalPrice: 649,
-      image: "/placeholder.svg",
-      category: "spiritual",
-      fragrance: "Sandalwood & Lotus",
-      shape: "Buddha"
-    },
-    {
-      id: 3,
-      name: "Heart Shape Love",
-      price: 299,
-      originalPrice: null,
-      image: "/placeholder.svg",
-      category: "romantic",
-      fragrance: "Vanilla & Rose",
-      shape: "Heart"
-    },
-    {
-      id: 4,
-      name: "Star Constellation",
-      price: 449,
-      originalPrice: null,
-      image: "/placeholder.svg",
-      category: "celestial",
-      fragrance: "Lavender & Mint",
-      shape: "Star"
-    },
-    {
-      id: 5,
-      name: "Lotus Petal Peace",
-      price: 499,
-      originalPrice: 599,
-      image: "/placeholder.svg",
-      category: "spiritual",
-      fragrance: "Lotus & Jasmine",
-      shape: "Lotus"
-    },
-    {
-      id: 6,
-      name: "Geometric Cube",
-      price: 349,
-      originalPrice: null,
-      image: "/placeholder.svg",
-      category: "modern",
-      fragrance: "Eucalyptus & Tea Tree",
-      shape: "Cube"
-    }
-  ];
+  // ✅ Map image URLs & normalize categories (matches Festive/Jar pattern)
+  const products: Product[] = useMemo(() => {
+    return (productsData as any[]).map((p) => {
+      const key = `/src/assets/${String(p.image).replace(/^\/+/, "")}`;
+      const src = images[key] ?? PLACEHOLDER;
+
+      const categories: string[] = Array.isArray(p.categories)
+        ? p.categories
+        : p.category
+          ? [p.category]
+          : [];
+
+      return { ...p, image: src, categories };
+    });
+  }, []);
 
   const filters = [
     { id: "all", name: "All Shapes" },
@@ -78,12 +53,13 @@ const MouldCandles = () => {
     { id: "spiritual", name: "Spiritual" },
     { id: "romantic", name: "Romantic" },
     { id: "celestial", name: "Celestial" },
-    { id: "modern", name: "Modern" }
+    { id: "modern", name: "Modern" },
   ];
 
-  const filteredProducts = selectedFilter === "all"
-    ? products
-    : products.filter(product => product.category === selectedFilter);
+  const filteredProducts =
+    selectedFilter === "all"
+      ? products
+      : products.filter((p) => p.categories.includes(selectedFilter));
 
   return (
     <div className="min-h-screen bg-background">
@@ -95,8 +71,7 @@ const MouldCandles = () => {
             Mould Candles Collection
           </h1>
           <p className="text-lg font-body text-muted-foreground max-w-2xl mx-auto">
-            Beautiful shaped candles crafted with precision. Each unique form
-            tells a story and creates an artistic statement in your space.
+            Beautiful shaped candles crafted with precision. Each unique form tells a story and creates an artistic statement in your space.
           </p>
         </div>
 
@@ -116,30 +91,40 @@ const MouldCandles = () => {
           ))}
         </div>
 
-        {/* Products Grid */}
+        {/* Products (square media area to match other pages) */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {filteredProducts.map((product) => (
             <Card key={product.id} className="group hover:shadow-luxury transition-all duration-300">
-              <div className="relative">
+              {/* Square media area */}
+              <div className="relative aspect-square overflow-hidden rounded-t-lg bg-muted">
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="w-full h-48 object-cover rounded-t-lg"
+                  loading="lazy"
+                  className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-[1.03]"
+                  sizes="(min-width: 1280px) 25vw, (min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  fetchPriority="low"
                 />
-                <div className="absolute top-3 left-3 flex gap-2">
-
-                </div>
                 <div className="absolute top-3 right-3 flex gap-2">
-                  <Button size="icon" variant="secondary" className="h-8 w-8 opacity-0 group-hover:opacity-100 transition-opacity">
+                  <Button
+                    size="icon"
+                    variant="secondary"
+                    className="h-8 w-8 opacity-0 group-hover:opacity-100 transition-opacity"
+                    aria-label="Add to wishlist"
+                  >
                     <Heart className="h-4 w-4" />
                   </Button>
                 </div>
               </div>
 
               <CardContent className="p-4">
-                <h3 className="font-display font-semibold text-lg mb-1">{product.name}</h3>
-                <p className="text-sm text-primary mb-2">Shape: {product.shape}</p>
-                <p className="text-sm text-muted-foreground mb-2">{product.fragrance}</p>
+                <h3 className="font-display font-semibold text-lg mb-1 line-clamp-2">
+                  {product.name}
+                </h3>
+                <p className="text-sm text-primary mb-1">Shape: {product.shape}</p>
+                <p className="text-sm text-muted-foreground mb-3 line-clamp-1">
+                  {product.fragrance}
+                </p>
 
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
@@ -150,10 +135,7 @@ const MouldCandles = () => {
                       </span>
                     )}
                   </div>
-                  <Button
-                    size="sm"
-                    className="gap-2"
-                  >
+                  <Button size="sm" className="gap-2">
                     <ShoppingCart className="h-4 w-4" />
                     Add to Cart
                   </Button>
@@ -163,35 +145,17 @@ const MouldCandles = () => {
           ))}
         </div>
 
-        {
-          filteredProducts.length === 0 && (
-            <div className="text-center py-12">
-              <p className="text-lg text-muted-foreground">
-                No products found for the selected filter.
-              </p>
-            </div>
-          )
-        }
-
-        {/* Info Section */}
-        {/* <div className="mt-16 bg-gradient-gold rounded-lg p-8">
-          <div className="text-center">
-            <h3 className="text-2xl font-display font-bold text-foreground mb-4">
-              Custom Mould Designs
-            </h3>
-            <p className="text-foreground/80 mb-6 max-w-2xl mx-auto">
-              Have a specific shape in mind? We can create custom moulds for your unique vision.
-              Perfect for special events, corporate gifts, or personal collections.
+        {filteredProducts.length === 0 && (
+          <div className="text-center py-12">
+            <p className="text-lg text-muted-foreground">
+              No products found for the selected filter.
             </p>
-            <Button variant="luxury" size="lg">
-              Request Custom Design
-            </Button>
           </div>
-        </div> */}
-      </main >
+        )}
+      </main>
 
       <Footer />
-    </div >
+    </div>
   );
 };
 

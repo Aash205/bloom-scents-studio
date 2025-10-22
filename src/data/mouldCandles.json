@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Rose Bloom Mould",
+        "price": 399,
+        "originalPrice": null,
+        "image": "/moulds/rose_bloom.png",
+        "category": "flower",
+        "fragrance": "Fresh Rose",
+        "shape": "Rose"
+    },
+    {
+        "id": 2,
+        "name": "Buddha Meditation",
+        "price": 549,
+        "originalPrice": 649,
+        "image": "/moulds/buddha_meditation.png",
+        "category": "spiritual",
+        "fragrance": "Sandalwood & Lotus",
+        "shape": "Buddha"
+    },
+    {
+        "id": 3,
+        "name": "Heart Shape Love",
+        "price": 299,
+        "originalPrice": null,
+        "image": "/moulds/heart_shape_love.png",
+        "category": "romantic",
+        "fragrance": "Vanilla & Rose",
+        "shape": "Heart"
+    },
+    {
+        "id": 4,
+        "name": "Star Constellation",
+        "price": 449,
+        "originalPrice": null,
+        "image": "/moulds/star_constellation.png",
+        "category": "celestial",
+        "fragrance": "Lavender & Mint",
+        "shape": "Star"
+    },
+    {
+        "id": 5,
+        "name": "Lotus Petal Peace",
+        "price": 499,
+        "originalPrice": 599,
+        "image": "/moulds/lotus_petal_peace.png",
+        "category": "spiritual",
+        "fragrance": "Lotus & Jasmine",
+        "shape": "Lotus"
+    },
+    {
+        "id": 6,
+        "name": "Geometric Cube",
+        "price": 349,
+        "originalPrice": null,
+        "image": "/moulds/geometric_cube.png",
+        "category": "modern",
+        "fragrance": "Eucalyptus & Tea Tree",
+        "shape": "Cube"
+    }
+]

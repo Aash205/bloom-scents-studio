@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button";
 // import festiveImage from "@/assets/festive-candles.jpg";
 import festiveImage from "@/assets/diwali/11.png";
-import jarImage from "@/assets/jar/1.png";
-import mouldImage from "@/assets/christmas/10.png";
+import jarImage from "@/assets/jar/mason_jar.png";
+import mouldImage from "@/assets/christmas/angel.png";
 import sachetsImage from "@/assets/diwali/13.png";
 
 const categories = [

@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1,
+        "name": "Classic Mason Jar",
+        "price": 449,
+        "originalPrice": null,
+        "image": "jar/mason_jar.png",
+        "categories": [
+            "mason"
+        ],
+        "fragrance": "Vanilla & Lavender"
+    },
+    {
+        "id": 2,
+        "name": "Amber Glass Jar",
+        "price": 499,
+        "originalPrice": 549,
+        "image": "jar/amber_jar.png",
+        "categories": [
+            "amber"
+        ],
+        "fragrance": "Sandalwood & Vanilla"
+    },
+    {
+        "id": 3,
+        "name": "Frosted Soy Jar",
+        "price": 429,
+        "originalPrice": null,
+        "image": "/jar_frosted.png",
+        "categories": [
+            "jars"
+        ],
+        "fragrance": "White Tea & Thyme"
+    },
+    {
+        "id": 4,
+        "name": "Matte Black Jar",
+        "price": 529,
+        "originalPrice": 579,
+        "image": "/jar_matte_black.png",
+        "categories": [
+            "jars"
+        ],
+        "fragrance": "Oudh & Bergamot"
+    }
+]

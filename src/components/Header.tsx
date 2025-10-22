@@ -27,7 +27,7 @@ const Header = () => {
             </div>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex items-center space-x-8">
+            <nav className="hidden md:flex items-center space-x-12">
               <a href="/festive" className={navLink}>
                 Festive Candles
               </a>
