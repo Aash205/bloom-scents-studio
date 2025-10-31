@@ -10,7 +10,6 @@ import FestiveCandles from "./pages/FestiveCandles";
 import MouldCandles from "./pages/MouldCandles";
 import JarCandles from "./pages/JarCandles";
 import WaxSachets from "./pages/WaxSachets";
-import CustomSachets from "./pages/CustomSachets";
 import About from "./pages/About";
 
 const queryClient = new QueryClient();

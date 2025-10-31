@@ -52,6 +52,7 @@ const FestiveCandles = () => {
     { id: "diwali", name: "Diwali" },
     { id: "christmas", name: "Christmas" },
     { id: "valentine", name: "Valentine's Day" },
+    { id: "harrypotter", name: "Harry Potter" },
   ];
 
   const filteredProducts =

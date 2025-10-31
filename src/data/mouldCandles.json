@@ -1,31 +1,32 @@
 [
     {
         "id": 1,
-        "name": "Rose Bloom Mould",
+        "name": "Pastel Pillar",
         "price": 399,
         "originalPrice": null,
-        "image": "/moulds/rose_bloom.png",
-        "category": "flower",
+        "image": "/pillar/pastel_pillar.png",
+        "categories":["modern"] ,
         "fragrance": "Fresh Rose",
         "shape": "Rose"
     },
     {
         "id": 2,
-        "name": "Buddha Meditation",
+        "name": "Premium Pillar",
         "price": 549,
         "originalPrice": 649,
-        "image": "/moulds/buddha_meditation.png",
-        "category": "spiritual",
+        "image": "/pillar/geometric_cube.png",
+        "categories":["modern"],
+        "category": "modern",
         "fragrance": "Sandalwood & Lotus",
         "shape": "Buddha"
     },
     {
         "id": 3,
-        "name": "Heart Shape Love",
+        "name": "Spiral Pillar",
         "price": 299,
         "originalPrice": null,
-        "image": "/moulds/heart_shape_love.png",
-        "category": "romantic",
+        "image": "/pillar/spiral_pillar.png",
+        "category": "modern",
         "fragrance": "Vanilla & Rose",
         "shape": "Heart"
     },
@@ -34,7 +35,7 @@
         "name": "Star Constellation",
         "price": 449,
         "originalPrice": null,
-        "image": "/moulds/star_constellation.png",
+        "image": "/pillar/star_constellation.png",
         "category": "celestial",
         "fragrance": "Lavender & Mint",
         "shape": "Star"
@@ -44,7 +45,7 @@
         "name": "Lotus Petal Peace",
         "price": 499,
         "originalPrice": 599,
-        "image": "/moulds/lotus_petal_peace.png",
+        "image": "/pillar/lotus_petal_peace.png",
         "category": "spiritual",
         "fragrance": "Lotus & Jasmine",
         "shape": "Lotus"
@@ -54,7 +55,7 @@
         "name": "Geometric Cube",
         "price": 349,
         "originalPrice": null,
-        "image": "/moulds/geometric_cube.png",
+        "image": "/pillar/geometric_cube.png",
         "category": "modern",
         "fragrance": "Eucalyptus & Tea Tree",
         "shape": "Cube"

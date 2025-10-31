@@ -50,7 +50,6 @@ const MouldCandles = () => {
   const filters = [
     { id: "all", name: "All Shapes" },
     { id: "flower", name: "Floral" },
-    { id: "spiritual", name: "Spiritual" },
     { id: "romantic", name: "Romantic" },
     { id: "celestial", name: "Celestial" },
     { id: "modern", name: "Modern" },

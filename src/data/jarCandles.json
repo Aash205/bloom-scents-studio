@@ -23,10 +23,10 @@
     },
     {
         "id": 3,
-        "name": "Frosted Soy Jar",
+        "name": "Spice Jar",
         "price": 429,
         "originalPrice": null,
-        "image": "/jar_frosted.png",
+        "image": "jar/spice_jar.png",
         "categories": [
             "jars"
         ],
@@ -34,10 +34,76 @@
     },
     {
         "id": 4,
-        "name": "Matte Black Jar",
+        "name": "Holographic Jar",
         "price": 529,
         "originalPrice": 579,
-        "image": "/jar_matte_black.png",
+        "image": "jar/holographic_jar.png",
+        "categories": [
+            "jars"
+        ],
+        "fragrance": "Oudh & Bergamot"
+    },
+    {
+        "id": 5,
+        "name": "Rose Glass Jar",
+        "price": 529,
+        "originalPrice": 579,
+        "image": "jar/rose_glass_jar.png",
+        "categories": [
+            "jars"
+        ],
+        "fragrance": "Oudh & Bergamot"
+    },
+    {
+        "id": 6,
+        "name": "Votive Jar",
+        "price": 529,
+        "originalPrice": 579,
+        "image": "jar/votive_jar.png",
+        "categories": [
+            "jars"
+        ],
+        "fragrance": "Oudh & Bergamot"
+    },
+    {
+        "id": 7,
+        "name": "Floral Jar",
+        "price": 529,
+        "originalPrice": 579,
+        "image": "jar/floral_themed_jar.png",
+        "categories": [
+            "jars"
+        ],
+        "fragrance": "Oudh & Bergamot"
+    },
+    {
+        "id": 8,
+        "name": "Ocean Jar",
+        "price": 529,
+        "originalPrice": 579,
+        "image": "jar/ocean_themed_jar.png",
+        "categories": [
+            "jars"
+        ],
+        "fragrance": "Oudh & Bergamot"
+    },
+    {
+        "id": 9,
+        "name": "Forest Jar",
+        "price": 529,
+        "originalPrice": 579,
+        "image": "jar/forest_themed_jar.png",
+        "categories": [
+            "jars"
+        ],
+        "fragrance": "Oudh & Bergamot"
+    },
+    {
+        "id": 10,
+        "name": "octagone Jar",
+        "price": 529,
+        "originalPrice": 579,
+        "image": "jar/octagone_jar.png",
         "categories": [
             "jars"
         ],
