@@ -52,7 +52,7 @@ const WaxSachets = () => {
     { id: "all", name: "All Sachets" },
     { id: "floral", name: "Floral" },
     { id: "sea", name: "Sea Breeze" },
-    { id: "forest", name: "Forest Fresh" },
+    { id: "baby", name: "Baby Shower" },
   ];
 
   const filteredProducts =

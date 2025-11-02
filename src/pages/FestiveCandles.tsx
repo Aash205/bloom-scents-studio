@@ -31,21 +31,32 @@ const FestiveCandles = () => {
   const [selectedFilter, setSelectedFilter] = useState("all");
 
   // ✅ Map image names & normalize categories
-  const products: Product[] = useMemo(() => {
-    return (productsData as any[]).map((p) => {
-      const key = `/src/assets/${String(p.image).replace(/^\/+/, "")}`;
+const products: Product[] = useMemo(() => {
+  // Flatten all nested festival arrays into one big list
+  const allProducts = Object.values(productsData)
+    .flatMap((arr: any[]) => arr)
+    .map((p, index) => {
+      const normalizedPath = String(p.image || "").replace(/^\/+/, "");
+      const key = `/src/assets/${normalizedPath}`;
       const src = images[key] ?? PLACEHOLDER;
-
-      // normalize categories so JSON can use either "category" or "categories"
       const categories: string[] = Array.isArray(p.categories)
         ? p.categories
         : p.category
-          ? [p.category]
-          : [];
+        ? [p.category]
+        : [];
 
-      return { ...p, image: src, categories };
+      // Assign globally unique ID
+      return {
+        ...p,
+        id: index + 1,
+        image: src,
+        categories,
+      };
     });
-  }, []);
+
+  return allProducts;
+}, []);
+
 
   const filters = [
     { id: "all", name: "All Festivals" },
@@ -53,6 +64,8 @@ const FestiveCandles = () => {
     { id: "christmas", name: "Christmas" },
     { id: "valentine", name: "Valentine's Day" },
     { id: "harrypotter", name: "Harry Potter" },
+    { id: "rakshabandhan", name: "Rakshabandhan" },
+    
   ];
 
   const filteredProducts =

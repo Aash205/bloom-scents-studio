@@ -4,60 +4,79 @@
         "name": "Pastel Pillar",
         "price": 399,
         "originalPrice": null,
-        "image": "/pillar/pastel_pillar.png",
-        "categories":["modern"] ,
+        "image": "/mould/pastel_pillar.png",
+        "category": "pillar",
         "fragrance": "Fresh Rose",
         "shape": "Rose"
     },
     {
         "id": 2,
         "name": "Premium Pillar",
-        "price": 549,
-        "originalPrice": 649,
-        "image": "/pillar/geometric_cube.png",
-        "categories":["modern"],
-        "category": "modern",
-        "fragrance": "Sandalwood & Lotus",
-        "shape": "Buddha"
+        "price": 449,
+        "originalPrice": null,
+        "image": "/mould/premium_pillar2.png",
+        "category": "pillar",
+        "fragrance": "Lavender & Mint",
+        "shape": "Star"
     },
     {
         "id": 3,
         "name": "Spiral Pillar",
         "price": 299,
         "originalPrice": null,
-        "image": "/pillar/spiral_pillar.png",
-        "category": "modern",
+        "image": "/mould/spiral_pillar.png",
+        "category": "pillar",
         "fragrance": "Vanilla & Rose",
         "shape": "Heart"
     },
     {
         "id": 4,
-        "name": "Star Constellation",
-        "price": 449,
+        "name": "Botanical 1",
+        "price": 299,
         "originalPrice": null,
-        "image": "/pillar/star_constellation.png",
-        "category": "celestial",
-        "fragrance": "Lavender & Mint",
-        "shape": "Star"
+        "image": "/mould/botanical.png",
+        "category": "modern",
+        "fragrance": "Vanilla & Rose",
+        "shape": "Heart"
     },
     {
         "id": 5,
-        "name": "Lotus Petal Peace",
-        "price": 499,
-        "originalPrice": 599,
-        "image": "/pillar/lotus_petal_peace.png",
-        "category": "spiritual",
-        "fragrance": "Lotus & Jasmine",
-        "shape": "Lotus"
+        "name": "Botanical 2",
+        "price": 299,
+        "originalPrice": null,
+        "image": "/mould/botanical2.png",
+        "category": "modern",
+        "fragrance": "Vanilla & Rose",
+        "shape": "Heart"
     },
     {
         "id": 6,
-        "name": "Geometric Cube",
-        "price": 349,
+        "name": "Pheony Flower",
+        "price": 299,
         "originalPrice": null,
-        "image": "/pillar/geometric_cube.png",
+        "image": "/mould/pheony.png",
+        "category": "flower",
+        "fragrance": "Vanilla & Rose",
+        "shape": "Heart"
+    },
+    {
+        "id": 7,
+        "name": "Rose",
+        "price": 299,
+        "originalPrice": null,
+        "image": "/mould/rose.png",
+        "category": "flower",
+        "fragrance": "Vanilla & Rose",
+        "shape": "Heart"
+    },
+    {
+        "id": 8,
+        "name": "Wool",
+        "price": 299,
+        "originalPrice": null,
+        "image": "/mould/wool.png",
         "category": "modern",
-        "fragrance": "Eucalyptus & Tea Tree",
-        "shape": "Cube"
+        "fragrance": "Vanilla & Rose",
+        "shape": "Heart"
     }
 ]

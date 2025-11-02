@@ -21,7 +21,7 @@ const Header = () => {
             <div className="flex items-center space-x-2">
               <h1 className="text-2xl font-display font-bold text-foreground">
                 <a href="/" className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 rounded-sm">
-                  Sparkupp Candles
+                  SparkUpp Candles
                 </a>
               </h1>
             </div>

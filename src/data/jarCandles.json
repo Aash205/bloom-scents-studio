@@ -108,5 +108,82 @@
             "jars"
         ],
         "fragrance": "Oudh & Bergamot"
+    },
+    {
+        "id": 11,
+        "name": "Lotus Jar",
+        "price": 529,
+        "originalPrice": 579,
+        "image": "jar/lotus_jar.png",
+        "categories": [
+            "jars"
+        ],
+        "fragrance": "Oudh & Bergamot"
+    },
+    {
+        "id": 12,
+        "name": "Pink Floral Jar",
+        "price": 529,
+        "originalPrice": 579,
+        "image": "jar/pinkfloral.png",
+        "categories": [
+            "jars"
+        ],
+        "fragrance": "Oudh & Bergamot"
+    },
+    {
+        "id": 13,
+        "name": "Matcha Tea Jar",
+        "price": 529,
+        "originalPrice": 579,
+        "image": "jar/tea_matcha.png",
+        "categories": [
+            "jars"
+        ],
+        "fragrance": "Oudh & Bergamot"
+    },
+    {
+        "id": 14,
+        "name": "Pixie Dust Jar",
+        "price": 529,
+        "originalPrice": 579,
+        "image": "jar/pixiedust_jar.png",
+        "categories": [
+            "jars"
+        ],
+        "fragrance": "Oudh & Bergamot"
+    },
+    {
+        "id": 15,
+        "name": "Wine Jar",
+        "price": 529,
+        "originalPrice": 579,
+        "image": "jar/wine_jar.png",
+        "categories": [
+            "jars"
+        ],
+        "fragrance": "Oudh & Bergamot"
+    },
+    {
+        "id": 16,
+        "name": "Wooden Jar",
+        "price": 529,
+        "originalPrice": 579,
+        "image": "jar/wooden_jar.png",
+        "categories": [
+            "jars"
+        ],
+        "fragrance": "Oudh & Bergamot"
+    },
+    {
+        "id": 17,
+        "name": "Diffuser",
+        "price": 529,
+        "originalPrice": 579,
+        "image": "jar/diffuser.png",
+        "categories": [
+            "jars"
+        ],
+        "fragrance": "Oudh & Bergamot"
     }
 ]

@@ -49,12 +49,6 @@ const JarCandles = () => {
 
   const filters = [
     { id: "all", name: "All Jars" },
-    { id: "mason", name: "Mason Jars" },
-    { id: "amber", name: "Amber Glass" },
-    { id: "ceramic", name: "Ceramic" },
-    { id: "vintage", name: "Vintage Style" },
-    { id: "clear", name: "Clear Glass" },
-    { id: "rustic", name: "Rustic" },
   ];
 
   const filteredProducts =

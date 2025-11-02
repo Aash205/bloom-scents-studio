@@ -1,329 +1,367 @@
-[
-  {
-    "id": 1,
-    "name": "Brass Bloom Urli",
-    "price": 299,
-    "originalPrice": 399,
-    "image": "diwali/Brass_bloom_urli.png",
-    "categories": ["diwali"],
-    "fragrance": "Lavender"
-  },
-  {
-    "id": 2,
-    "name": "Circle Urli",
-    "price": 249,
-    "originalPrice": 349,
-    "image": "diwali/Circle_Urli.png",
-    "categories": ["diwali"],
-    "fragrance": "Rose"
-  },
-  {
-    "id": 3,
-    "name": "Flower Urli",
-    "price": 279,
-    "originalPrice": 379,
-    "image": "diwali/Flower_Urli.png",
-    "categories": ["diwali"],
-    "fragrance": "Jasmine"
-  },
-  {
-    "id": 4,
-    "name": "Flower Urli 1",
-    "price": 279,
-    "originalPrice": 379,
-    "image": "diwali/Flower_Urli1.png",
-    "categories": ["diwali"],
-    "fragrance": "Mogra"
-  },
-  {
-    "id": 5,
-    "name": "Happy Diwali Secret Msg",
-    "price": 199,
-    "originalPrice": 299,
-    "image": "diwali/Happy_Diwali_Secret_Msg.png",
-    "categories": ["diwali"],
-    "fragrance": "Vanilla"
-  },
-  {
-    "id": 6,
-    "name": "Kaju Katli",
-    "price": 149,
-    "originalPrice": 249,
-    "image": "diwali/Kaju_Katli.png",
-    "categories": ["diwali"],
-    "fragrance": "Sandalwood"
-  },
-  {
-    "id": 7,
-    "name": "Ladoo Candles",
-    "price": 159,
-    "originalPrice": 259,
-    "image": "diwali/Ladoo_Candles.png",
-    "categories": ["diwali"],
-    "fragrance": "Cardamom"
-  },
-  {
-    "id": 8,
-    "name": "Mandala",
-    "price": 179,
-    "originalPrice": 279,
-    "image": "diwali/Mandala.png",
-    "categories": ["diwali"],
-    "fragrance": "Saffron"
-  },
-  {
-    "id": 9,
-    "name": "Hamper 1",
-    "price": 179,
-    "originalPrice": 279,
-    "image": "diwali/Hamper1.png",
-    "categories": ["diwali"],
-    "fragrance": "Saffron"
-  },
+{
+  "diwali": [
     {
-    "id": 10,
-    "name": "Hamper 1",
-    "price": 179,
-    "originalPrice": 279,
-    "image": "diwali/Hamper2.png",
-    "categories": ["diwali"],
-    "fragrance": "Saffron"
-  },
-    {
-        "id": 11,
-        "name": "Angel Candle",
-        "price": 349,
-        "originalPrice": null,
-        "image": "christmas/angel.png",
-        "categories": [
-            "christmas"
-        ],
-        "fragrance": "Rose & Lavender"
+      "id": 1,
+      "name": "Brass Bloom Urli",
+      "price": 299,
+      "originalPrice": 399,
+      "image": "diwali/Brass_bloom_urli.png",
+      "categories": ["diwali", "jar"],
+      "fragrance": "Lavender"
     },
     {
-        "id": 12,
-        "name": "Santa Candle",
-        "price": 349,
-        "originalPrice": null,
-        "image": "christmas/santa.png",
-        "categories": [
-            "christmas"
-        ],
-        "fragrance": "Rose & Lavender"
+      "id": 2,
+      "name": "Circle Urli",
+      "price": 249,
+      "originalPrice": 349,
+      "image": "diwali/Circle_Urli.png",
+      "categories": ["diwali"],
+      "fragrance": "Rose"
     },
     {
-        "id": 13,
-        "name": "Christmas Jars Set",
-        "price": 349,
-        "originalPrice": null,
-        "image": "christmas/christmas_jars.png",
-        "categories": [
-            "christmas"
-        ],
-        "fragrance": "Rose & Lavender"
+      "id": 3,
+      "name": "Flower Urli",
+      "price": 279,
+      "originalPrice": 379,
+      "image": "diwali/Flower_Urli.png",
+      "categories": ["diwali"],
+      "fragrance": "Jasmine"
     },
     {
-        "id": 14,
-        "name": "Christmas Tin Jar Set",
-        "price": 349,
-        "originalPrice": null,
-        "image": "christmas/tin_jar_christmas.png",
-        "categories": [
-            "christmas"
-        ],
-        "fragrance": "Rose & Lavender"
+      "id": 4,
+      "name": "Flower Urli 1",
+      "price": 279,
+      "originalPrice": 379,
+      "image": "diwali/Flower_Urli1.png",
+      "categories": ["diwali"],
+      "fragrance": "Mogra"
     },
     {
-        "id": 15,
-        "name": "Circle TeaLight Set",
-        "price": 349,
-        "originalPrice": null,
-        "image": "christmas/circle_tealights.png",
-        "categories": [
-            "christmas"
-        ],
-        "fragrance": "Rose & Lavender"
+      "id": 5,
+      "name": "Kaju Katli",
+      "price": 149,
+      "originalPrice": 249,
+      "image": "diwali/Kaju_Katli.png",
+      "categories": ["diwali"],
+      "fragrance": "Sandalwood"
     },
     {
-        "id": 16,
-        "name": "Square TeaLight Set",
-        "price": 349,
-        "originalPrice": null,
-        "image": "christmas/square_tealights.png",
-        "categories": [
-            "christmas"
-        ],
-        "fragrance": "Rose & Lavender"
+      "id": 6,
+      "name": "Ladoo Candles",
+      "price": 159,
+      "originalPrice": 259,
+      "image": "diwali/Ladoo_Candles.png",
+      "categories": ["diwali"],
+      "fragrance": "Cardamom"
     },
     {
-        "id": 17,
-        "name": "Snowflake Christmas Jar",
-        "price": 349,
-        "originalPrice": null,
-        "image": "christmas/red_christmas.png",
-        "categories": [
-            "christmas"
-        ],
-        "fragrance": "Rose & Lavender"
+      "id": 7,
+      "name": "Mandala",
+      "price": 179,
+      "originalPrice": 279,
+      "image": "diwali/Mandala.png",
+      "categories": ["diwali"],
+      "fragrance": "Saffron"
     },
     {
-        "id": 18,
-        "name": "Deer Christmas Jar",
-        "price": 349,
-        "originalPrice": null,
-        "image": "christmas/deer_christmas.png",
-        "categories": [
-            "christmas"
-        ],
-        "fragrance": "Rose & Lavender"
+      "id": 8,
+      "name": "Happy Diwali Secret Msg",
+      "price": 199,
+      "originalPrice": 299,
+      "image": "diwali/Happy_Diwali_Secret_Msg.png",
+      "categories": ["diwali"],
+      "fragrance": "Vanilla"
     },
     {
-        "id": 19,
-        "name": "Tree Christmas Jar",
-        "price": 349,
-        "originalPrice": null,
-        "image": "christmas/green_christmas_jar.png",
-        "categories": [
-            "christmas"
-        ],
-        "fragrance": "Rose & Lavender"
+      "id": 9,
+      "name": "Hamper 1",
+      "price": 179,
+      "originalPrice": 279,
+      "image": "diwali/Hamper1.png",
+      "categories": ["diwali"],
+      "fragrance": "Saffron"
     },
     {
-        "id": 20,
-        "name": "Christmas Wax Sachets",
-        "price": 349,
-        "originalPrice": null,
-        "image": "christmas/christmas_wax_sachets.png",
-        "categories": [
-            "christmas"
-        ],
-        "fragrance": "Rose & Lavender"
+      "id": 10,
+      "name": "Hamper 2",
+      "price": 179,
+      "originalPrice": 279,
+      "image": "diwali/Hamper2.png",
+      "categories": ["diwali"],
+      "fragrance": "Saffron"
+    }
+  ],
+  "christmas": [
+    {
+      "id": 1,
+      "name": "Christmas Jars Set",
+      "price": 349,
+      "originalPrice": null,
+      "image": "christmas/christmas_jars.png",
+      "categories": ["christmas"],
+      "fragrance": "Rose & Lavender"
     },
     {
-    "id": 21,
-    "name": "Garden Rose",
-    "price": 349,
-    "originalPrice": null,
-    "image": "val/Garden_rose.png",
-    "categories": ["valentine"],
-    "fragrance": "Rose & Lavender"
-},
-{
-    "id": 22,
-    "name": "Lavender Luxury Jar",
-    "price": 349,
-    "originalPrice": null,
-    "image": "val/Lavender_luxury_jar.png",
-    "categories": ["valentine"],
-    "fragrance": "Rose & Lavender"
-},
-{
-    "id": 23,
-    "name": "Mini Frost Jars",
-    "price": 349,
-    "originalPrice": null,
-    "image": "val/mini_frost_jars.png",
-    "categories": ["valentine"],
-    "fragrance": "Rose & Lavender"
-},
-{
-    "id": 24,
-    "name": "Mini Hearts",
-    "price": 349,
-    "originalPrice": null,
-    "image": "val/mini_hearts.png",
-    "categories": ["valentine"],
-    "fragrance": "Rose & Lavender"
-},
-{
-    "id": 25,
-    "name": "Pink Votive",
-    "price": 349,
-    "originalPrice": null,
-    "image": "val/pink_votive.png",
-    "categories": ["valentine"],
-    "fragrance": "Rose & Lavender"
-},
-{
-    "id": 26,
-    "name": "Red Blush",
-    "price": 349,
-    "originalPrice": null,
-    "image": "val/Red_Blush.png",
-    "categories": ["valentine"],
-    "fragrance": "Rose & Lavender"
-},
-{
-    "id": 27,
-    "name": "Red Hearts",
-    "price": 349,
-    "originalPrice": null,
-    "image": "val/red_hearts.png",
-    "categories": ["valentine"],
-    "fragrance": "Rose & Lavender"
-},
-{
-    "id": 28,
-    "name": "Rose with Bouquet",
-    "price": 349,
-    "originalPrice": null,
-    "image": "val/rose_with_bouquet.png",
-    "categories": ["valentine"],
-    "fragrance": "Rose & Lavender"
-},
-{
-    "id": 29,
-    "name": "Single Rose",
-    "price": 349,
-    "originalPrice": null,
-    "image": "val/single_rose.png",
-    "categories": ["valentine"],
-    "fragrance": "Rose & Lavender"
-},
-{
-    "id": 30,
-    "name": "Wax Melts",
-    "price": 349,
-    "originalPrice": null,
-    "image": "val/Wax_melts.png",
-    "categories": ["valentine"],
-    "fragrance": "Rose & Lavender"
-},
-{
-    "id": 31,
-    "name": "Hogwarts Jar",
-    "price": 349,
-    "originalPrice": null,
-    "image": "hp/Hogwarts_jar.png",
-    "categories": ["harrypotter"],
-    "fragrance": "Rose & Lavender"
-},
-{
-    "id": 32,
-    "name": "HP House Color",
-    "price": 349,
-    "originalPrice": null,
-    "image": "hp/hp_house_color.png",
-    "categories": ["harrypotter"],
-    "fragrance": "Rose & Lavender"
-},
-{
-    "id": 33,
-    "name": "HP House Jar",
-    "price": 349,
-    "originalPrice": null,
-    "image": "hp/hp_house_jar.png",
-    "categories": ["harrypotter"],
-    "fragrance": "Rose & Lavender"
-},
-{
-    "id": 34,
-    "name": "HP Spell Jar",
-    "price": 349,
-    "originalPrice": null,
-    "image": "hp/hp_spell_jar.png",
-    "categories": ["harrypotter"],
-    "fragrance": "Rose & Lavender"
+      "id": 2,
+      "name": "Snowflake Christmas Jar",
+      "price": 349,
+      "originalPrice": null,
+      "image": "christmas/red_christmas.png",
+      "categories": ["christmas"],
+      "fragrance": "Rose & Lavender"
+    },
+    {
+      "id": 3,
+      "name": "Deer Christmas Jar",
+      "price": 349,
+      "originalPrice": null,
+      "image": "christmas/deer_christmas.png",
+      "categories": ["christmas"],
+      "fragrance": "Rose & Lavender"
+    },
+    {
+      "id": 4,
+      "name": "Tree Christmas Jar",
+      "price": 349,
+      "originalPrice": null,
+      "image": "christmas/green_christmas_jar.png",
+      "categories": ["christmas"],
+      "fragrance": "Rose & Lavender"
+    },
+    {
+      "id": 5,
+      "name": "Christmas Tin Jar Set",
+      "price": 349,
+      "originalPrice": null,
+      "image": "christmas/tin_jar_christmas.png",
+      "categories": ["christmas"],
+      "fragrance": "Rose & Lavender"
+    },
+    {
+      "id": 6,
+      "name": "Circle TeaLight Set",
+      "price": 349,
+      "originalPrice": null,
+      "image": "christmas/circle_tealights.png",
+      "categories": ["christmas"],
+      "fragrance": "Rose & Lavender"
+    },
+    {
+      "id": 7,
+      "name": "Square TeaLight Set",
+      "price": 349,
+      "originalPrice": null,
+      "image": "christmas/square_tealights.png",
+      "categories": ["christmas"],
+      "fragrance": "Rose & Lavender"
+    },
+    {
+      "id": 8,
+      "name": "Angel Candle",
+      "price": 349,
+      "originalPrice": null,
+      "image": "christmas/angel.png",
+      "categories": ["christmas"],
+      "fragrance": "Rose & Lavender"
+    },
+    {
+      "id": 9,
+      "name": "Santa Candle",
+      "price": 349,
+      "originalPrice": null,
+      "image": "christmas/santa.png",
+      "categories": ["christmas"],
+      "fragrance": "Rose & Lavender"
+    },
+    {
+      "id": 10,
+      "name": "Christmas Wax Sachets",
+      "price": 349,
+      "originalPrice": null,
+      "image": "christmas/christmas_wax_sachets.png",
+      "categories": ["christmas"],
+      "fragrance": "Rose & Lavender"
+    }
+  ],
+  "valentine": [
+    {
+      "id": 1,
+      "name": "Garden Rose",
+      "price": 349,
+      "image": "val/Garden_rose.png",
+      "categories": ["valentine"],
+      "fragrance": "Rose & Lavender"
+    },
+    {
+      "id": 2,
+      "name": "Lavender Luxury Jar",
+      "price": 349,
+      "image": "val/Lavender_luxury_jar.png",
+      "categories": ["valentine"],
+      "fragrance": "Rose & Lavender"
+    },
+    {
+      "id": 3,
+      "name": "Mini Frost Jars",
+      "price": 349,
+      "image": "val/mini_frost_jars.png",
+      "categories": ["valentine"],
+      "fragrance": "Rose & Lavender"
+    },
+    {
+      "id": 4,
+      "name": "Mini Hearts",
+      "price": 349,
+      "image": "val/mini_hearts.png",
+      "categories": ["valentine"],
+      "fragrance": "Rose & Lavender"
+    },
+    {
+      "id": 5,
+      "name": "Pink Votive",
+      "price": 349,
+      "image": "val/pink_votive.png",
+      "categories": ["valentine"],
+      "fragrance": "Rose & Lavender"
+    },
+    {
+      "id": 6,
+      "name": "Red Blush",
+      "price": 349,
+      "image": "val/Red_Blush.png",
+      "categories": ["valentine"],
+      "fragrance": "Rose & Lavender"
+    },
+    {
+      "id": 7,
+      "name": "Red Hearts",
+      "price": 349,
+      "image": "val/red_hearts.png",
+      "categories": ["valentine"],
+      "fragrance": "Rose & Lavender"
+    },
+    {
+      "id": 8,
+      "name": "Heart Crystal Jar",
+      "price": 349,
+      "image": "val/heart_jar.png",
+      "categories": ["valentine"],
+      "fragrance": "Rose & Lavender"
+    },
+    {
+      "id": 9,
+      "name": "LOVE - Letters",
+      "price": 349,
+      "image": "val/love_letters.png",
+      "categories": ["valentine"],
+      "fragrance": "Rose & Lavender"
+    },
+    {
+      "id": 10,
+      "name": "Heart Shaped Tealights",
+      "price": 349,
+      "image": "val/heart_tealights.png",
+      "categories": ["valentine"],
+      "fragrance": "Rose & Lavender"
+    }
+  ],
+  "harrypotter": [
+    {
+      "id": 1,
+      "name": "Hogwarts Jar",
+      "price": 349,
+      "image": "hp/Hogwarts_jar.png",
+      "categories": ["harrypotter"],
+      "fragrance": "Rose & Lavender"
+    },
+    {
+      "id": 2,
+      "name": "HP House Color",
+      "price": 349,
+      "image": "hp/hp_house_color.png",
+      "categories": ["harrypotter"],
+      "fragrance": "Rose & Lavender"
+    },
+    {
+      "id": 3,
+      "name": "HP House Jar",
+      "price": 349,
+      "image": "hp/hp_house_jar.png",
+      "categories": ["harrypotter"],
+      "fragrance": "Rose & Lavender"
+    },
+    {
+      "id": 4,
+      "name": "HP Spell Jar",
+      "price": 349,
+      "image": "hp/hp_spell_jar.png",
+      "categories": ["harrypotter"],
+      "fragrance": "Rose & Lavender"
+    }
+  ],
+  "rakshabandhan": [
+    {
+      "id": 1,
+      "name": "Bhai Sachet",
+      "price": 299,
+      "originalPrice": 399,
+      "image": "rakshabandhan/bhai.png",
+      "categories": ["rakshabandhan"],
+      "fragrance": "Rose & Sandalwood"
+    },
+    {
+      "id": 2,
+      "name": "Bro Sachet",
+      "price": 299,
+      "originalPrice": 399,
+      "image": "rakshabandhan/bro.png",
+      "categories": ["rakshabandhan"],
+      "fragrance": "Rose & Sandalwood"
+    },
+    {
+      "id": 3,
+      "name": "Sis Sachet",
+      "price": 299,
+      "originalPrice": 399,
+      "image": "rakshabandhan/sis.png",
+      "categories": ["rakshabandhan"],
+      "fragrance": "Rose & Sandalwood"
+    },
+    {
+      "id": 4,
+      "name": "Bhabhi Sachet",
+      "price": 299,
+      "originalPrice": 399,
+      "image": "rakshabandhan/bhabhi.png",
+      "categories": ["rakshabandhan"],
+      "fragrance": "Rose & Sandalwood"
+    },
+    {
+      "id": 5,
+      "name": "Bro Letters",
+      "price": 299,
+      "originalPrice": 399,
+      "image": "rakshabandhan/bro_letters.png",
+      "categories": ["rakshabandhan"],
+      "fragrance": "Rose & Sandalwood"
+    },
+    {
+      "id": 6,
+      "name": "Sis Letters",
+      "price": 299,
+      "originalPrice": 399,
+      "image": "rakshabandhan/sis_letters.png",
+      "categories": ["rakshabandhan"],
+      "fragrance": "Rose & Sandalwood"
+    },
+    {
+      "id": 7,
+      "name": "Sachets Bhai Bhabhi",
+      "price": 299,
+      "originalPrice": 399,
+      "image": "rakshabandhan/sachetsbb.png",
+      "categories": ["rakshabandhan"],
+      "fragrance": "Rose & Sandalwood"
+    }
+  ]
 }
-
-]
