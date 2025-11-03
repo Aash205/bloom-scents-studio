@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      
+
       <main className="container mx-auto px-4 py-8">
         {/* Hero Section */}
         <div className="text-center mb-16">
@@ -14,9 +14,9 @@ const About = () => {
             About Sparkupp Candles
           </h1>
           <p className="text-lg font-body text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Born from a passion for creating moments of tranquility and joy, Sparkupp Candles 
-            has been illuminating homes and hearts since our founding. We believe that every 
-            candle tells a story, and every flame carries the power to transform spaces into 
+            Born from a passion for creating moments of tranquility and joy, Sparkupp Candles
+            has been illuminating homes and hearts since our founding. We believe that every
+            candle tells a story, and every flame carries the power to transform spaces into
             sanctuaries of peace and celebration.
           </p>
         </div>
@@ -29,35 +29,35 @@ const About = () => {
             </h2>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                What started as a small home-based venture has grown into a beloved brand 
-                that celebrates the art of candle making. Our founder's journey began with 
-                a simple desire to create candles that weren't just sources of light, but 
+                What started as a small home-based venture has grown into a beloved brand
+                that celebrates the art of candle making. Our founder's journey began with
+                a simple desire to create candles that weren't just sources of light, but
                 vessels of emotion and memory.
               </p>
               <p>
-                Each candle in our collection is meticulously crafted using traditional 
-                techniques combined with modern innovations. We source the finest natural 
-                waxes, premium fragrances, and sustainable materials to ensure that every 
+                Each candle in our collection is meticulously crafted using traditional
+                techniques combined with modern innovations. We source the finest natural
+                waxes, premium fragrances, and sustainable materials to ensure that every
                 product meets our high standards of quality and environmental responsibility.
               </p>
               <p>
-                From festive celebrations to quiet moments of reflection, Sparkupp Candles 
-                has been part of countless special occasions. We take pride in being more 
-                than just a candle company – we're creators of ambiance, curators of comfort, 
+                From festive celebrations to quiet moments of reflection, Sparkupp Candles
+                has been part of countless special occasions. We take pride in being more
+                than just a candle company – we're creators of ambiance, curators of comfort,
                 and companions in your life's most precious moments.
               </p>
             </div>
           </div>
-          
+
           <div className="space-y-6">
-            <img 
-              src="/placeholder.svg" 
-              alt="Candle making process" 
+            <img
+              src="/placeholder.svg"
+              alt="Candle making process"
               className="w-full h-64 object-cover rounded-lg shadow-card"
             />
-            <img 
-              src="/placeholder.svg" 
-              alt="Our workshop" 
+            <img
+              src="/placeholder.svg"
+              alt="Our workshop"
               className="w-full h-64 object-cover rounded-lg shadow-card"
             />
           </div>
@@ -80,7 +80,7 @@ const About = () => {
                 </p>
               </CardContent>
             </Card>
-            
+
             <Card>
               <CardContent className="p-6 text-center">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -92,7 +92,7 @@ const About = () => {
                 </p>
               </CardContent>
             </Card>
-            
+
             <Card>
               <CardContent className="p-6 text-center">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -104,7 +104,7 @@ const About = () => {
                 </p>
               </CardContent>
             </Card>
-            
+
             <Card>
               <CardContent className="p-6 text-center">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -149,7 +149,7 @@ const About = () => {
         </div>
 
         {/* Team Section */}
-        <div className="text-center">
+        {/* <div className="text-center">
           <h2 className="text-3xl font-display font-bold text-foreground mb-6">
             Meet Our Team
           </h2>
@@ -204,7 +204,7 @@ const About = () => {
               </CardContent>
             </Card>
           </div>
-        </div>
+        </div> */}
       </main>
 
       <Footer />

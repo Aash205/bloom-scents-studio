@@ -81,9 +81,9 @@ const CategoryGrid = () => {
                 </div>
 
                 <div className="flex items-center justify-between">
-                  <span className="text-sm font-body text-primary font-medium">
+                  {/* <span className="text-sm font-body text-primary font-medium">
                     {category.items}
-                  </span>
+                  </span> */}
                   <Button variant="outline" size="sm" asChild>
                     <a href={category.link}>Explore</a>
                   </Button>
