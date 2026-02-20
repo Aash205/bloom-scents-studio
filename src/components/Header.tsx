@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { ShoppingCart, Search, Heart, Menu, User } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Header = () => {
@@ -13,51 +14,57 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 sm:px-6">
         {/* keep this wrapper relative so mobile menu can anchor under it */}
         <div className="relative">
-          <div className="flex items-center justify-between py-4">
-            {/* Logo */}
-            <div className="flex items-center space-x-2">
-              <h1 className="text-2xl font-display font-bold text-foreground">
-                <a href="/" className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 rounded-sm">
-                  SparkUpp Candles
-                </a>
-              </h1>
-            </div>
+          {/* Mobile: flex. Desktop+: 3-col grid (left / center / right) */}
+          <div className="py-3 sm:py-4">
+            <div className="flex items-center justify-between gap-3 md:grid md:grid-cols-[1fr_auto_1fr] md:items-center">
+              {/* Logo (left) */}
+              <div className="flex items-center gap-2 md:justify-self-start">
+                <h1 className="text-2xl font-display font-bold text-foreground leading-none">
+                  <Link
+                    to="/"
+                    className="rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
+                  >
+                    SparkUpp Candles
+                  </Link>
+                </h1>
+              </div>
 
-            {/* Desktop Navigation */}
-            <nav className="hidden md:flex items-center space-x-12">
-              <a href="/festive" className={navLink}>
-                Festive Candles
-              </a>
-              <a href="/mould" className={navLink}>
-                Mould Candles
-              </a>
-              <a href="/jar" className={navLink}>
-                Jar Candles
-              </a>
-              <a href="/wax-sachets" className={navLink}>
-                Wax Sachets
-              </a>
-              <a href="/about" className={navLink}>
-                About
-              </a>
-            </nav>
+              {/* Desktop Navigation (center) */}
+              <nav className="hidden md:flex items-center gap-8 lg:gap-10 md:justify-self-center">
+                <Link to="/festive" className={navLink}>
+                  Festive Candles
+                </Link>
+                <Link to="/mould" className={navLink}>
+                  Mould Candles
+                </Link>
+                <Link to="/jar" className={navLink}>
+                  Jar Candles
+                </Link>
+                <Link to="/wax-sachets" className={navLink}>
+                  Wax Sachets
+                </Link>
+                {/* <Link to="/about" className={navLink}>
+                  About
+                </Link> */}
+              </nav>
 
-            {/* Action Buttons */}
-            <div className="flex items-center space-x-2">
-              <Button
-                variant="ghost"
-                size="icon"
-                className="md:hidden"
-                aria-label="Toggle menu"
-                aria-expanded={isOpen}
-                aria-controls="mobile-menu"
-                onClick={() => setIsOpen((s) => !s)}
-              >
-                <Menu className="h-5 w-5" />
-              </Button>
+              {/* Action Buttons (right) */}
+              <div className="flex items-center gap-1.5 sm:gap-2 md:justify-self-end">
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="md:hidden"
+                  aria-label="Toggle menu"
+                  aria-expanded={isOpen}
+                  aria-controls="mobile-menu"
+                  onClick={() => setIsOpen((s) => !s)}
+                >
+                  <Menu className="h-5 w-5" />
+                </Button>
+              </div>
             </div>
           </div>
 
@@ -70,22 +77,26 @@ const Header = () => {
               isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0",
             ].join(" ")}
           >
-            <div className="flex flex-col space-y-4 p-4">
-              <a href="/festive" className={navLink} onClick={() => setIsOpen(false)}>
+            <div className="flex flex-col space-y-3 px-4 py-5">
+              <Link to="/festive" className={navLink} onClick={() => setIsOpen(false)}>
                 Festive Candles
-              </a>
-              <a href="/mould" className={navLink} onClick={() => setIsOpen(false)}>
+              </Link>
+              <Link to="/mould" className={navLink} onClick={() => setIsOpen(false)}>
                 Mould Candles
-              </a>
-              <a href="/jar" className={navLink} onClick={() => setIsOpen(false)}>
+              </Link>
+              <Link to="/jar" className={navLink} onClick={() => setIsOpen(false)}>
                 Jar Candles
-              </a>
-              <a href="/wax-sachets" className={navLink} onClick={() => setIsOpen(false)}>
+              </Link>
+              <Link
+                to="/wax-sachets"
+                className={navLink}
+                onClick={() => setIsOpen(false)}
+              >
                 Wax Sachets
-              </a>
-              <a href="/about" className={navLink} onClick={() => setIsOpen(false)}>
+              </Link>
+              {/* <Link to="/about" className={navLink} onClick={() => setIsOpen(false)}>
                 About
-              </a>
+              </Link> */}
             </div>
           </nav>
         </div>

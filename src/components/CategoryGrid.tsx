@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 // import festiveImage from "@/assets/festive-candles.jpg";
 import festiveImage from "@/assets/diwali/Circle_Urli.png";
 import jarImage from "@/assets/jar/mason_jar.png";
@@ -85,7 +86,7 @@ const CategoryGrid = () => {
                     {category.items}
                   </span> */}
                   <Button variant="outline" size="sm" asChild>
-                    <a href={category.link}>Explore</a>
+                    <Link to={category.link}>Explore</Link>
                   </Button>
                 </div>
               </div>
