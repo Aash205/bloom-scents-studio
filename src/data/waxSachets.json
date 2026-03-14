@@ -86,5 +86,16 @@
     "fragrance": "Soft Rose & Baby Powder",
     "duration": "2-3 months",
     "pack": "Set of 4"
+  },
+  {
+    "id": 9,
+    "name": "Sachets Bhai Bhabhi",
+    "price": 299,
+    "originalPrice": 399,
+    "image": "rakshabandhan/sachetsbb.png",
+    "categories": [
+      "rakshabandhan"
+    ],
+    "fragrance": "Rose & Sandalwood"
   }
 ]
